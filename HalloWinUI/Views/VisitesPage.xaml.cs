@@ -23,5 +23,6 @@ namespace HalloWinUI.Views
             // Recharger les données à chaque navigation
             ViewModel.ChargerDonnees();
         }
+
     }
 }

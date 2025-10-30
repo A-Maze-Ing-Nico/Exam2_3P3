@@ -38,6 +38,7 @@ namespace HalloWinUI.ViewModels
                 {
                     _maison.EstSignalee = value;
                     RaisePropertyChanged(nameof(StatutCouleur));
+                    RaisePropertyChanged(nameof(StatutTexte));
                 }
             }
         }
