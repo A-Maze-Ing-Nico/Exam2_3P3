@@ -53,5 +53,14 @@ namespace HalloWinUI.ViewModels.Pages
                 Maisons.Remove(MaisonSelectionnee); 
             }
         }
+
+
+        public void AjouterMaison(string maisonTexte)
+        {
+            if (maisonTexte != "")
+            {
+                Maisons.Add(new MaisonViewModel(new Maison(maisonTexte)));
+            }
+        }
     }
 }
