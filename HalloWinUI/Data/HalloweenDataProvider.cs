@@ -29,7 +29,8 @@ namespace HalloWinUI.Data
                 new Maison(adresse:"123 Rue des Fantômes", estSignalee:true),
                 new Maison(adresse:"456 Avenue des Citrouilles", estSignalee:false),
                 new Maison(adresse : "789 Boulevard Hanté", estSignalee:false),
-                new Maison(adresse : "321 Chemin des Sorcières", estSignalee:false)
+                new Maison(adresse : "321 Chemin des Sorcières", estSignalee:false),
+                new Maison(adresse : "La maison à Dougliboudlak", estSignalee:true)
             };
 
             _enfants = new List<Enfant>
