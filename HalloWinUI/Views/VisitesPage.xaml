@@ -27,7 +27,7 @@
                 Width="300"
                 HorizontalAlignment="Left"
                 DisplayMemberPath="Nom"
-                ItemsSource=""
+                ItemsSource="{x:Bind ViewModel.Enfants, Mode=OneWay}"
                 SelectedValue="" />
         </StackPanel>
 
