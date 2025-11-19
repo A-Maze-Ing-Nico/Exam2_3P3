@@ -11,25 +11,22 @@
 
     <Grid x:Name="root" Padding="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <!--  TODO: TextBox idéalement dans StackPanel avec Button (c'est le même formulaire)  -->
+        <!--  TODO: Utiliser le binding (x:Name pas nécessaire).  -->
         <TextBox
-            Grid.Row="0"
             x:Name="adresseAjout"
-            PlaceholderText="Adresse de la nouvelle maison">
-                   
-        </TextBox>
+            Grid.Row="0"
+            PlaceholderText="Adresse de la nouvelle maison" />
 
-        <StackPanel Spacing="12" Grid.Row="1">
-            <Button
-                Click="BtnAjouter_Click">
-                <StackPanel 
-                    Orientation="Horizontal" 
-                    Spacing="8">
+        <StackPanel Grid.Row="1" Spacing="12">
+            <Button Click="BtnAjouter_Click">
+                <StackPanel Orientation="Horizontal" Spacing="8">
                     <FontIcon Glyph="&#xE710;" />
                     <TextBlock VerticalAlignment="Center" Text="Ajouter" />
                 </StackPanel>

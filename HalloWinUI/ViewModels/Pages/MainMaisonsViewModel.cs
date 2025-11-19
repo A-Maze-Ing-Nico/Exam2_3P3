@@ -18,12 +18,14 @@ namespace HalloWinUI.ViewModels.Pages
                 if (_maisonSelectionnee != value)
                 {
                     _maisonSelectionnee = value;
+                    // TODO: RaisePropertyChanged ici car binding TwoWay (au cas où, par exemple, on désélectionne dans le code).
                 }
             }
         }
 
         public ObservableCollection<MaisonViewModel> Maisons { get; }
 
+        // TODO: Implémenter la notification de changement de propriété
         public string NouvelleMaison { get; set; }
 
         public MainMaisonsViewModel(IHalloweenDataProvider dataProvider)
@@ -54,9 +56,12 @@ namespace HalloWinUI.ViewModels.Pages
             }
         }
 
-
+        // TODO: Vider le TextBox après l'ajout: NouvelleMaison = string.Empty;
+        //        Tu vas voir que le TextBox ne se vide pas. Il faut notifier le
+        //        changement de propriété (voir commentaire plus haut).
         public void AjouterMaison(string maisonTexte)
         {
+            // TODO: utiliser string.IsNullOrWhiteSpace() pour aussi éiter d'ajouter des espaces vides.
             if (maisonTexte != "")
             {
                 Maisons.Add(new MaisonViewModel(new Maison(maisonTexte)));

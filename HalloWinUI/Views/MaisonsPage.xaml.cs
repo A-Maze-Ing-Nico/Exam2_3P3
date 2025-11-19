@@ -26,6 +26,10 @@ namespace HalloWinUI.Views
 
         private void BtnAjouter_Click(object sender, RoutedEventArgs e)
         {
+            // TODO: Utiliser le binding (dans la méthode AjouterMaison du côté du ViewModel)
+            //          pour aller chercher la bonne propriété.
+            //      Voir ce qui est fait dans la méthode SupprimerMaison. Pas besoin de passer
+            //      un param, on utilise la propriét MaisonSelectionne liée dans xaml.
             ViewModel.AjouterMaison(adresseAjout.Text);
         }
 
